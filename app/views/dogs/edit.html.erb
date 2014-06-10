@@ -8,14 +8,6 @@
     <%= f.text_field :dog_color %>
   </p>
   <p>
-    <%= f.submit 'Create dog' %>
+    <%= f.submit 'Update dog' %>
   </p>
-<% end %>
-
-<% @dogs.each do |dog| %>
-<ul>
-  <li>
-    <%= link_to "#{dog.dog_name}", dog_path(dog) %> <%= dog.dog_color %>
-  </li>
-</ul>
 <% end %>
